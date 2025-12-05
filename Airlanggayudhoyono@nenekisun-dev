@@ -1,5 +1,113 @@
-From 6f51e482cf82c62ffac09ff329683520ccac2db5 Mon Sep 17 00:00:00 2001
-From: "Airlanggayudhoyono@Intel-Mil.Info" <nenekisun@gmail.com>
+From:"Airlanggayudhoyono@Nenekisun-dev"<6f51e482cf82c62ffac09ff329683520ccac2db5> Mon Sep 17 00:00:00 2001
+Skip to content
+Navigation Menu
+github
+docs
+
+Code
+Issues
+70
+You’re making changes in a project you don’t have write access to. Submitting a change will write it to a new branch in your fork nenekisun-dev/docs, so you can send a pull request.
+docs
+/
+Airlanggayudhoyono@Intel-Mil.Info
+in
+main
+
+Edit
+
+Preview
+Indent mode
+
+Spaces
+Indent size
+
+2
+Line wrap mode
+
+Soft wrap
+Editing Airlanggayudhoyono@Intel-Mil.Info file contents
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+if not exist libpng-1.6.21\scripts\pnglibconf.h.prebuilt (echo pnglibconf.h.prebuilt not found & exit /b 1)
+copy /Y libpng-1.6.21\scripts\pnglibconf.h.prebuilt libpng-1.6.21\pnglibconf.h || exit /b 1
+        1 file(s) copied.
+cd ..\
+echo Configured third-party libraries
+Configured third-party libraries
+if not exist "%QT_PATH%\bin\qmake.exe" (echo QT_PATH does not exist or is invalid: %QT_PATH% & exit /b 1)
+if not exist "C:\Libraries\boost_1_89_0" (echo Boost not found at C:\Libraries\boost_1_89_0 & exit /b 1)
+cd toonz
+mkdir %PLATFORM% && cd %PLATFORM%
+cmake ..\sources -G "Visual Studio 16 2019" -Ax64 -DQT_PATH="%QT_PATH%" -DBOOST_ROOT="C:\Libraries\boost_1_89_0" -DOpenCV_DIR="C:\Tools\opencv\build" -DWITH_WINTAB=ON || exit /b 1
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.17763.
+-- The C compiler identification is MSVC 19.29.30159.0
+
+
+Welcome to GitHub Docs! GitHub’s documentation is open source, meaning anyone from inside or outside the company can contribute. For full contributing guidelines, visit our [contributing guide](https://docs.github.com/en/contributing)
+
+## Quick links by contributor type
+
+* **Hubbers (GitHub employees):** See [CONTRIBUTING.md](https://github.com/github/docs-content/blob/main/CONTRIBUTING.md) in the `docs-content` repository for GitHub-specific processes.
+
+* **Open source contributors:** See [CONTRIBUTING.md](https://github.com/github/docs/blob/main/.github/CONTRIBUTING.md) in the `docs` repository for a quick-start summary.
+
+## How we sync changes across Docs repositories
+
+There are two GitHub Docs repositories: 
+
+- **`github/docs`** (public): Open to external contributions
+
+- **`github/docs-internal`** (private): For GitHub employee contributions. 
+
+The two repositories sync frequently. Content changes in one are reflected in the other.  Hubbers might prefer to post in `docs` when working with a customer, but `docs` has limitations on the types of contributions it accepts to safeguard the site and our workflows. Internal contributions should usually go to `docs-internal`.
+
+**Important:** The `docs` repository accepts contributions to content files (`.md` files in `/content` and select `/data` sections like reusables only). Infrastructure files, workflows, and site-building code are not open for external modification.
+
+## New to contributing
+
+Here are some resources to help you get started with open source contributions:
+
+Use Control + Shift + m to toggle the tab key moving focus. Alternatively, use esc then tab to move to the next interactive element on the page.
+
+From: "Airlanggayudhoyono@Intel-Mil.Info" <Matahariagung13@gmail.com>
 Date: Sat, 6 Dec 2025 04:21:02 +0700
 Subject: [PATCH] Revert "Update Airlanggayudhoyono@Intel-Mil.Info"
 
