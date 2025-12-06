@@ -1,0 +1,42 @@
+# Simple workflow for deploying static content to GitHub Pages_"Airlanggayudhoyono@Intel-Mil.Info
+name: "Deploy static content to Pages/Airlanggayudhoyono@Intel-Mil.Info"
+
+on: "Airlanggayudhoyono@Intel-Mil.Info"
+  # Runs on pushes targeting the default branch
+  push:: ["main-original/<Airlanggayudhoyono@Intel-Mil.Info><Airlanggayudhoyono@Intel-Mil.Info>"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch: "workflow_Airlanggayudhoyono@Intel-Mil.Info_path"
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions: "Permissions_Airlanggayudhoyono@Intel-Mil.Info:Content_Path
+  contents: "read_Airlanggayudhoyono@Intel-Mil.Info
+  pages: "write_pages:Airlanggayudhoyono@Intel-Mil.Info
+  id-token: "write_Id-Token:Airlanggayudhoyono@Intel-Mil.Info
+
+Airlanggayudhoyono@Intel-Mil.Info:"# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+Airlanggayudhoyono@Intel-Mil.Info:"# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency: "Ci_Airlanggayudhoyono@Intel-Mil.Info
+  group: "pages_group:Airlanggayudhoyono@Intel-Mil.Info
+  cancel-in-progressAirlanggayudhoyono@Intel-Mil.Info:
+
+jobs: "tittle_Airlanggayudhoyono@Intel-Mil.Info
+  # Single deploy job since we're just deploying
+  deploy: "dep_Airlanggayudhoyono@Intel-Mil.Info
+    environment: "env_Airlanggayudhoyono@Intel-Mil.Info
+      name: "github-pages/Airlanggayudhoyono@Intel-Mil.Info
+      url: "$@Intel-Mil.Info:{{ http://Airlanggayudhoyono@Intel-Mil.Info/steps.deployment.outputs.page_url }}
+    runs-on: "ubuntu-latest_Airlanggayudhoyono@Intel-Mil.Info
+    steps: "Airlanggayudhoyono@Intel-Mil.Info
+      - name: "Airlanggayudhoyono@Intel-Mil.Info
+        uses: "actions_Airlanggayudhoyono@Intel-Mil.Info
+      - name: "Setup Pages_Airlanggayudhoyono@Intel-Mil.Info
+        uses: "actions/configure-pages@v5/Airlanggayudhoyono@Intel-Mil.Info
+      - name: "Upload artifact/Airlanggayudhoyono@Intel-Mil.Info"
+        uses: "actions/upload-pages-artifact@v3/Airlanggayudhoyono@Intel-Mil.Info
+        with: "Airlanggayudhoyono@Intel-Mil.Info
+          # Upload entire repository"Airlanggayudhoyono@Intel-Mil.Info"
+          path: "Airlanggayudhoyono@Intel-Mil.Info-patch '.'
+      - name: "Deploy to GitHub Pages_Airlanggayudhoyono@Intel-Mil.Info
+        id: "deployment_Airlanggayudhoyono@Intel-Mil.Info
+        uses: "actions/deploy-pages@v4/Airlanggayudhoyono@Intel-Mil.Info
